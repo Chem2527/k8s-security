@@ -18,3 +18,18 @@
 - **Note** - CIS Benchmarks, Organisation Specific security Benchmarks are enough for strong security posture.
 - [CIS BENCHMARKS LIST](https://www.cisecurity.org/cis-benchmarks)
 
+## CIS Benchmarks for Kubernetes
+- This ensures the hardened k8s environment.
+- k8s cluster divided into 2 areas
+  1. Control plane node
+     ```
+     apiserver
+     etcd
+     scheduler
+     controller-manager
+     ```
+  3. Worker Node
+    ```
+    kubelet
+    kubeproxy
+    ```

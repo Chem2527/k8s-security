@@ -8,3 +8,11 @@
 5. Supply chain Security
 6. Monitoring, Logging & Runtime Security
 ```
+## Basics of CIS Benchmarks
+
+- CIS benchmarks are best-practice security guidelines developed by center for internet security (CIS)
+- They provide step-by-step instructions on how to secure systems
+- CIS benchmarks are available for providers,devices,web servers
+
+- **Note** - CIS Benchmarks, Organisation Specific security Benchmark if these are done thats more than enough in terms of security.
+

@@ -1,13 +1,14 @@
 # k8s-security
 
-```
-1. Cluster setup
-2. Cluster Hardening
-3. System Hardening
-4. Minimize Microservice Vulneribilities
-5. Supply chain Security
-6. Monitoring, Logging & Runtime Security
-```
+## Curriculum
+
+- 1. Cluster setup
+- 2. Cluster Hardening
+- 3. System Hardening
+- 4. Minimize Microservice Vulneribilities
+- 5. Supply chain Security
+- 6. Monitoring, Logging & Runtime Security
+
 ## Basics of CIS Benchmarks
 
 - CIS benchmarks are best-practice security guidelines developed by center for internet security (CIS)

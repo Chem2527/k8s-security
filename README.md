@@ -19,9 +19,8 @@
 - [CIS BENCHMARKS LIST](https://www.cisecurity.org/cis-benchmarks)
 
 ## CIS Benchmarks for Kubernetes
-  CIS Benchmarks at Cluster level
-
-- k8s cluster divided into 2 areas
+  
+- CIS Benchmarks at Cluster level
   1. Control plane node
      ```
      apiserver

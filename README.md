@@ -19,7 +19,6 @@
 - [CIS BENCHMARKS LIST](https://www.cisecurity.org/cis-benchmarks)
 
 ## CIS Benchmarks for Kubernetes
-- This ensures the hardened k8s environment.
 - k8s cluster divided into 2 areas
   1. Control plane node
      ```
@@ -28,8 +27,13 @@
      scheduler
      controller-manager
      ```
-  3. Worker Node
+  2. Worker Node
     ```
     kubelet
     kubeproxy
     ```
+- Pod security Standards
+- CNI
+- Secrets
+- General
+   

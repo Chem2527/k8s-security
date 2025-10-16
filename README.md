@@ -16,4 +16,5 @@
 - CIS benchmarks are available for providers,devices,web servers
 
 - **Note** - CIS Benchmarks, Organisation Specific security Benchmarks are enough for strong security posture.
+- [CIS BENCHMARKS LIST](https://www.cisecurity.org/cis-benchmarks)
 

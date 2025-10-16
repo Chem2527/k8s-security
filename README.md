@@ -37,4 +37,7 @@
 - CNI
 - Secrets
 - General
-   
+
+## Security Shared Responsibility model in managed kubernetes offerings
+<img width="148" height="149" alt="image" src="https://github.com/user-attachments/assets/41ca90c1-df24-4c12-898a-0e66f428a067" />
+

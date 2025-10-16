@@ -15,5 +15,5 @@
 - They provide step-by-step instructions on how to secure systems
 - CIS benchmarks are available for providers,devices,web servers
 
-- **Note** - CIS Benchmarks, Organisation Specific security Benchmark if these are done thats more than enough in terms of security.
+- **Note** - CIS Benchmarks, Organisation Specific security Benchmarks are enough for strong security posture.
 

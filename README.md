@@ -2,7 +2,7 @@
 
 ## Curriculum
 
-1. Cluster setup
+- 1. Cluster setup
 - 2. Cluster Hardening
 - 3. System Hardening
 - 4. Minimize Microservice Vulneribilities

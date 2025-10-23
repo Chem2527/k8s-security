@@ -1,5 +1,5 @@
 # k8s-security
-
+# Day 1
 ## Curriculum
 
 - 1. Cluster setup
@@ -42,5 +42,30 @@
 <img width="148" height="149" alt="image" src="https://github.com/user-attachments/assets/41ca90c1-df24-4c12-898a-0e66f428a067" />
 
 - **kubebench** : Tool that checks whether kubernetes is deployed securely or not by running checks.
-- 
 
+# Day 2
+- choosing this os  as part of demo:  24.04 lts x64
+- ensure to modify the sg in such a way that it only allows traffic from our ip.
+
+## To secure etcd, we need to focus on 3 areas:
+```
+Plain Text Data Storage
+
+TLS encryption
+
+Certificate based authentication
+```
+- By default etcd stores data in plain text in the etcd
+- If an attacker somehow gets access to etcd, they can read secrets in plain text
+- Install etcd under /tmp directory
+- Port 2379 is the default client port for etcd
+- Port 2380 is used for internal communication between etcd nodes in a cluster
+- etcd stores data in the form of key = value
+
+  ```
+  etcdctl put course "this is k8s security"
+  etcdctl get course ## we will get the above value
+  ```
+- If you go inside the /tmp directory where we installed etcd we will be able to see **default.etcd** and inside this we have **member**
+- If we do **ls -la** we can see **snap,wal** and if we do **grep -R "this is k8s security" .** we can see 2 matches and just do cat for both of these  
+- How to configure the api server so that it will securely store the data in the etcd

@@ -93,5 +93,12 @@
 
   - Doing the same practical hands-on but this time with tls enabled and using tcp dump we will check whther we r able to see the data flow or not.
   - stoped at 9 min
-  - 
+ 
+
+## Day 3
+- ETCD Security Guidelines
+- Configure etcd binaries
+- Overview of certificate authority
+- 
+- 
    

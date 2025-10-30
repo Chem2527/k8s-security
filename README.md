@@ -1,5 +1,5 @@
 # k8s-security
-# Day 1
+# Day 1 (25/10/2025)
 ## Curriculum
 
 - 1. Cluster setup
@@ -43,7 +43,7 @@
 
 - **kubebench** : Tool that checks whether kubernetes is deployed securely or not by running checks.
 
-# Day 2
+# Day 2 (28/10/2025)
 - choosing this os  as part of demo:  24.04 lts x64
 - ensure to modify the sg in such a way that it only allows traffic from our ip.
 
@@ -95,7 +95,7 @@
   - stoped at 9 min
  
 
-## Day 3
+## Day 3 (30/10/2025)
 - ETCD Security Guidelines
 - Configure etcd binaries
 - Overview of certificate authority

@@ -129,7 +129,10 @@ openssl x509 -req -in ca.csr -signkey ca.key -out ca.crt -days 1000
 ```
 **Remove the CSR**
 
-```rm -f ca.csr
+```
+rm -f ca.csr
 ```
 **Check contents of certificate**
+```
 openssl x509 -in client.crt -text -noout ( Shows info about certificate client.crt in human readable format)
+```

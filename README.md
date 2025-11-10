@@ -92,13 +92,14 @@
 
 
   - Doing the same practical hands-on but this time with tls enabled and using tcp dump we will check whther we r able to see the data flow or not.
-  - stoped at 9 min
+
  
 
 ## Day 3 (30/10/2025)
-- ETCD Security Guidelines
-- Configure etcd binaries
-- Overview of certificate authority
+ **Overview of certificate authority**
+- Kubernetes components like api server, kubelet, controller manager,etcd should communicate with each other over secure channel.
+- These components need a mechanism to verify each others identity.
+- Certificate authority: It issues digital certificates
 - 
-- 
+ 
    

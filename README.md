@@ -100,6 +100,36 @@
 - Kubernetes components like api server, kubelet, controller manager,etcd should communicate with each other over secure channel.
 - These components need a mechanism to verify each others identity.
 - Certificate authority: It issues digital certificates
-- 
- 
-   
+
+- **Use-cases where CA certificate will be used**
+- To generate TLS certificates for secure communication (we can generate tls for etcd so that etcd will listen on https)
+- Generate certificates for client/component for authentication
+
+- Command for verifying CAfile
+```
+openssl verify -CAfile <CA_certificate.crt> <certificate_to_verify.crt>
+```
+
+- ex: openssl verify -CAfile  example-ca.crt client.crt (shows verification failed)
+```
+openssl verify -CAfile k8s.crt client.crt (Shows ok -  It means that client.crt is valid and trusted by the CA in k8s.crt)
+```
+
+  ### Configure Certificate authority:
+- **Create a private key for certificate authority& CSR**
+```
+mkdir /root/certificates
+cd /root/certificates
+openssl genrsa -out ca.key 2048
+openssl req new -key ca.key -subj "/CN=sai" -out ca.csr
+```
+**Self sign the CSR**
+```
+openssl x509 -req -in ca.csr -signkey ca.key -out ca.crt -days 1000
+```
+**Remove the CSR**
+
+```rm -f ca.csr
+```
+**Check contents of certificate**
+openssl x509 -in client.crt -text -noout ( Shows info about certificate client.crt in human readable format)

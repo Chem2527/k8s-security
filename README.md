@@ -163,4 +163,6 @@ openssl x509 -in client.crt -text -noout ( Shows info about certificate client.c
   rm -f zeal.crt sai.key sai.csr
   
   ```
+
+  ### How to Secure kubernetes api - kubectl in aws self managed & Aws managed clusters?
   

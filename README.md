@@ -136,3 +136,31 @@ rm -f ca.csr
 ```
 openssl x509 -in client.crt -text -noout ( Shows info about certificate client.crt in human readable format)
 ```
+
+## Day 4:  Workflow - issuance of signed certificates
+
+- create .key - use .key and generate .csr - self sign the .csr and output is .crt - use this .crt for signing other certificates - verify whether the certificate used for signing another is matching or not.
+
+  ```
+  cd /root/certificates
+  
+  openssl genrsa -out ca.key 2048
+
+  openssl req -new -key ca.key -sub "/CN=sai"  -out ca.csr
+
+  openssl x509 -req -in ca.csr -signkey ca.key -out ca.crt -days 1000
+
+  openssl genrsa -out sai.key 2048
+  
+  openssl req -new -key sai.key -subj "/CN=zealvora" -out sai.csr
+
+  openssl x509 -req -in sai.csr -CA ca.crt -CAkey ca.key -out sai.crt -days 1000
+
+  openssl x509 -in sai.crt -text -noout
+
+  openssl verify -CAfile ca.crt sai.crt
+
+  rm -f zeal.crt sai.key sai.csr
+  
+  ```
+  

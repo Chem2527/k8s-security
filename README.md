@@ -164,5 +164,10 @@ openssl x509 -in client.crt -text -noout ( Shows info about certificate client.c
   
   ```
 
-  ### How to Secure kubernetes api - kubectl in aws self managed & Aws managed clusters?
-  
+  ###  Day 5: How to Secure kubernetes api - kubectl in aws self managed & Aws managed clusters?
+ - Key security goals:
+
+Authentication: Who can access?
+Authorization: What can they do?
+Encryption: Secure communication.
+Audit: Track actions.
